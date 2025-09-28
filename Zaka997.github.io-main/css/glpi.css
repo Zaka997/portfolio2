@@ -1,0 +1,57 @@
+    /* Style général */
+body {
+
+    font-family: 'Arial', sans-serif;
+    background-color: #7c7c7d;
+}
+
+a{
+    color: black;
+}
+p{
+    color: #f4f4f9;
+}
+h2 {
+    color: #f8f3f3;
+}
+/*.mb-3{
+    text-align: center;
+    width: 55%;              "long" : 55% de la largeur de l'écran 
+    max-width: 1200px;       limite pour très grands écrans 
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+*/
+.mb-3{
+  border: 2px solid #8f8b8b;      /* bordure noire */
+  padding: 15px;               /* espace autour du texte */
+  width: 500px;          /* ajuste la largeur au texte */
+  margin: 20px auto;           /* centre horizontalement */
+  border-radius: 8px;          /* coins arrondis */
+  background-color: #f9f9f9;   /* fond doux */
+  text-align: center;          /* texte centré */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ombre légère */
+}
+
+/*h5.blocktext{
+
+}*/
+
+#about img {
+    max-width: 100%;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Style footer */
+footer {
+    background-color: #7c7c7d;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

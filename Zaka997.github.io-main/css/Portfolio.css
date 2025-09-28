@@ -1,0 +1,119 @@
+    /* Style général 
+body {
+    background-image: url(image/info.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    background-color: #7c7c7d;
+}*/
+
+body {
+    background-image: url('../image/info.jpg');
+    background-size: cover; /* Ajuste la taille de l'image de fond */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    background-attachment: fixed; /* permet de scroller sur une image fixe */
+    margin: 0;
+    height: 100%;
+    color: #f4f4f9; /* couleur du texte */
+}
+
+.transparent-section {
+    background-color: rgba(255, 255, 255, 0); /* fond complètement transparent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   /* ombre légère */
+    color: white;
+}
+
+
+h2, p {
+  color: #ffffff;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+a.btn {
+  border: 1px solid white;
+  color: white;
+}
+a.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.mb-3{
+  border: 2px solid #8f8b8b;      /* bordure noire */
+  background-color: rgba(255, 255, 255, 0.1); /* fond transparent */
+  padding: 15px;               /* espace autour du texte */
+  width: 500px;          /* ajuste la largeur au texte */
+  margin: 20px auto;           /* centre horizontalement */
+  border-radius: 8px;          /* coins arrondis */
+  background-color: transparent;   /* fond doux */
+  text-align: center;          /* texte centré */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ombre légère */
+}
+
+
+#about img {
+    max-width: 100%;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Style footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Image de fond sur toute la page, y compris la navbar */
+
+
+/* Navbar avec fond semi-transparent */
+.custom-navbar {
+    position: sticky; /* ou fixed */
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Liens de navbar */
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+    color: #edc9b5 !important;
+    transition: all 0.3s ease;
+}
+
+/* Effet au survol */
+.custom-navbar .nav-link:hover,
+.custom-navbar .navbar-brand:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+    transform: translateY(-3px);
+}
+
+/* Lien actif */
+.custom-navbar .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc avec transparence */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin-bottom: 20px; /* Espace entre les cartes */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    transition: transform 0.3s ease; /* Transition douce */
+}

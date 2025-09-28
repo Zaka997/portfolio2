@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/school.css">
+    <link rel="shortcut icon" type="image/png" href="../image/portfolio.png"/>
+
+</head>
+
+<body>
+    <!-- Hedear -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../image/portfolio.png" width="35", height="35">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Accueil</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="school.html">Parcours scolaire</a>
+
+                    <li class="nav-item">      
+                        <a class="nav-link" href="situation_pro.html">Situationtion Professionnel</a>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--À propos-->
+    <section id="about" class="container-fluid m-0 p-0">
+        
+            <div class="col-lg-12 d-flex flex-column justify-content-start align-items-center p-5 text-white" style="height: 70vh;">
+              <div class="bg-dark bg-opacity-50 p-4 rounded shadow-sm">
+                  <h2 class="mb-3"><strong>Zakaria Nessar</strong></h2>
+                  <p class="mb-4">Bienvenue dans mon parcours scolaire !</p>
+                  <a href="#explications" class="btn btn-outline-light">Lire la Suite</a>
+              </div>
+          </div>
+            <div class="col-lg-6" >
+                <!-- Espace vide pour équilibrer la section ou ajouter une image réelle plus tard -->
+                <div style="height: 780px;" ></div>
+            </div>      
+      
+    </section>
+
+    <!-- La Pleïade -->
+
+<section id="explications" class="bg-light py-5" >
+  <div class="container my-4">
+    <div class="row">
+      <!-- Slide de droite vers gauche -->
+      <div class="col-md-6">
+        <div class="card overlay-slide-card">
+          <div class="position-relative">
+            <img src="../image/pont.jpg" class="card-img-top" alt="Projet 1">
+            <div class="overlay slide-left d-flex align-items-center justify-content-center text-white text-center">
+              <div class="overlay-text">
+                <p style="color:black"><strong>Au lycée La Pleïade de 2021 à 2024 j'ai fait un Baccalauréat général, spécialités Mathématiques et NSI (Numerique Sciece Informatique ).</strong></p>
+                <a href="https://pleiade.ent.auvergnerhonealpes.fr/" class="btn btn-outline-light"><strong>>>Site Officiel</strong></a>         
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><strong>Lycée La Pleïade</strong></h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide de gauche vers droite -->
+      <div class="col-md-6">
+        <div class="card overlay-slide-card">
+          <div class="position-relative">
+            <img src="../image/jaque.jpg" class="card-img-top" alt="Projet 2">
+            <div class="overlay slide-right d-flex align-items-center justify-content-center text-white text-center">
+              <div class="overlay-text">
+                <p style="color:black"><strong>Au lycée Jaques-Brel de septembre 2024 à juillet 2025 pour ma poursuite d'etudes j'ai opté pour un BTS SIO, option SLAM. Ma formation a inclus les bases des réseaux, l'analyse de trames, le routage, la gestion des incidents, et la programmation en Python, Javascript, SQL, HTML/CSS, C# et PHP. J'ai également acquis des connaissances en cybersécurité.</strong></p>
+                <a href="https://lyc-jacques-brel.ent.auvergnerhonealpes.fr/" class="btn btn-outline-light"><strong>>> Site Officiel</strong></a>         
+                <a href="bts.html" class="btn btn-outline-light"><strong>Lire la Suite</strong></a>         
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><strong>Lycée Jaques-Brel</strong></h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    
+
+     <!-- Exemple de card classique A ENLEVER APRES!!!!!!!
+       <section id="portfolio" class="container my-5">
+        <h2 class="text-center">Mon Parcours Scolaire :</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../image/glpi.png" class="card-img-top" alt="Projet 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Bac</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">BAC+1</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+           <strong> <h2 style="color: black;" class="text-center">Contactez-moi sur :</h2></strong>
+            <form id="contact-form" action="send-message.php" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label"><a href="https://www.linkedin.com/in/zakaria-nessar-4a7583329?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuzFvVlfEQnGtWiV0uic7hA%3D%3D" target="_blank"><img src="../image/linkdin.png" class="card-img-top" alt="Projet 2">Mon Profil Linkdin:</a> </label>
+                </div>
+            </form>
+        </div>
+    </section>-->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+<!-- Pour le titre de la section "À propos de moi" exemplaire:  
+<section id="about" class="position-relative" style="height: 400px;">
+    <div class="position-absolute" style="top: 30px; left: 50px;">
+        <h2><strong>Zakaria Nessar</strong></h2>
+        <p>Bienvenue dans mon parcours scolaire !</p>
+    </div>
+</section> -->

@@ -1,0 +1,34 @@
+    /* Style général */
+body {
+
+    font-family: 'Arial', sans-serif;
+    background-color: #7c7c7d;
+}
+a{
+    color: black;
+}
+p{
+    color: #f4f4f9;
+}
+h2 {
+    color: #f8f3f3;
+}
+.mb-3{
+    border: 5px solid #7c7c7c;
+}
+
+#about img {
+    max-width: 100%;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Style footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

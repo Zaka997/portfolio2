@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Portfolio.css">
+    <link rel="shortcut icon" type="image/png" href="image/portfolio.png"/>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="image/portfolio.png" width="35", height="35">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Accueil</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="page/school.html">Parcours scolaire</a>
+
+                    <li class="nav-item">      
+                        <a class="nav-link" href="page/situation_pro.html">Situationtion Professionnel</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+     <!--À propos-->
+    <section id="about" class="container my-5" style="min-height: 100vh;">
+      
+            <!--Une case pour mieux lire le texte-->
+            <div class="col-lg-6 ">
+                <div class="bg-dark bg-opacity-50 p-4 rounded shadow-sm"  >
+                    <h2><strong>Zakaria Nessar</strong></h2>
+                    <p>Je suis un étudiant passionné en informatique,<br> et j'aspire a devenir un Softwer ingenieur </p>
+                    <a href="#explications" class="btn btn-outline-light"><strong>Lire la Suite</strong></a>          
+                    <!-- Lire la Suite 
+                    <div class="col-md-2">
+                        <div class="card">
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- Espace vide pour équilibrer la section ou ajouter une image réelle plus tard -->
+                <div style="height: 780px;"></div>
+            </div>     
+        
+    </section>
+
+    
+
+    <!-- Explications about me -->
+
+<section id="explications" class="bg-light py-5">
+        <!--conteiner Contexte-->
+        <div class="container" >
+            <strong><h2 style= "color: black;" class="text-center">À propos de moi</h2></strong>         
+                <div class="mb-3">
+                    <h5 style= "color: black;" class="text-center">En tant qu'étudiant en première année de BTS SIO option SLAM,
+                        j'ai appris des langauge de programmation pour front-end (HTML,CSS,JS,Bootstrap) et back-end(PHP, C#, Python, SQL).</h5>
+                </div>
+                
+        </div>  
+
+    <!-- Contact mettre Linkedin mail-->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+           <strong> <h2 style="color: black;" class="text-center">Contactez-moi sur :</h2></strong>
+            <form id="contact-form" action="send-message.php" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label"><a href="https://www.linkedin.com/in/zakaria-nessar-4a7583329?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuzFvVlfEQnGtWiV0uic7hA%3D%3D" target="_blank"><img src="image/linkdin.png" class="card-img-top" alt="Projet 2">Mon Profil Linkdin:</a> </label>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

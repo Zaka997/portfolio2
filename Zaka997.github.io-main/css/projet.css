@@ -1,0 +1,177 @@
+    /* Style général 
+body {
+    background-image: url(image/info.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    background-color: #7c7c7d;
+}*/
+
+body {
+    background-image: url('../image/work.jpg');
+    background-size: cover; /* Ajuste la taille de l'image de fond */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    background-attachment: fixed; /* permet de scroller sur une image fixe */
+    margin: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* fond sombre pour améliorer la lisibilité */
+    color: #f4f4f9; /* couleur du texte */
+}
+
+/* Navbar avec fond semi-transparent */
+/* === NAVBAR === */
+.custom-navbar {
+    position: sticky; /* ou fixed */
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.6); /* fond semi-transparent */
+}
+
+/* Liens de navbar */
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+    color: #edc9b5 !important;
+    transition: all 0.3s ease;
+}
+
+/* Effet au survol */
+.custom-navbar .nav-link:hover,
+.custom-navbar .navbar-brand:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+    transform: translateY(-3px);
+}
+
+/* Lien actif */
+.custom-navbar .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a.btn {
+  border: 1px solid white;
+  color: white;
+}
+a.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+p{
+    color: #f4f4f4;
+}
+h2 {
+    color: #f8f3f3;
+}
+
+.cursor {
+  display: inline-block;
+  color: #f4f4f9;
+  font-weight: bold;
+  animation: blink 0.8s infinite;
+  font-size: 20px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+/*C'est le fond du Modal 
+.custom-modal { 
+    display: none;Masqué par défaut 
+    position: fixed;/* Reste en place 
+    z-index: 1050;/* Au-dessus de tout le reste 
+    left: 0;/* À gauche de l'écran 
+    top: 0;/* En haut de l'écran 
+    width: 100vw;/* Prend toute la largeur de l'écran 
+    height: 100vh;  /* Prend toute la hauteur de l'écran 
+    background-color: rgba(0, 0, 0, 0.7);/* Fond semi-transparent 
+    display: flex;  /* Utilise flexbox pour centrer le contenu 
+    justify-content: center; /* Centre horizontalement 
+    align-items: center;    /* Centre verticalement 
+}*/
+
+.modal-dialog{
+    width: 100%; /* Largeur de la modale */
+    max-width: 1000px;   /* Largeur maximale */
+}
+
+/* Contenu de la modale c'est le fils de Dialog*/
+.modal-content {
+    background-color: #fff; /* Fond blanc */
+    color: #000;    /* Couleur du texte */
+    padding: 20px;      /* Espace intérieur */
+    border-radius: 10px;    /* Coins arrondis */
+    max-height: 90vh;   /* Hauteur maximale */
+    overflow-y: auto;   /* Permet le défilement si le contenu dépasse la hauteur maximale */
+    position: relative; /* Pour positionner le bouton de fermeture */
+}
+
+
+/* Bouton de fermeture */
+.close {
+    position: absolute; /* Positionné par rapport à la modale */
+    top: 10px;  /* En haut à droite */
+    right: 15px;    /* À droite de la modale */
+    font-size: 24px;    /* Taille du texte */
+    font-weight: bold;  /* Gras */
+    color: #333;    /* Couleur du texte */
+    cursor: pointer;    /* Curseur pointeur pour indiquer que c'est cliquable */
+}
+
+
+#about img {
+    max-width: 100%;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Style footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* === CARDS === */
+.card {
+    background-color: rgb(91, 66, 53); /* Fond blanc avec transparence */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin-bottom: 20px; /* Espace entre les cartes */
+}
+
+.card-header {
+    background-color: #8a6754; /* exemple : marron doux */
+    color: white;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    transition: transform 0.3s ease; /* Transition douce */
+}
+
+/*.mb-3{
+  border: 2px solid #8f8b8b;       bordure noire 
+  background-color: rgba(255, 255, 255, 0.1); /* fond transparent 
+  padding: 15px;               /* espace autour du texte 
+  width: 500px;          /* ajuste la largeur au texte 
+  margin: 20px auto;           /* centre horizontalement 
+  border-radius: 8px;          /* coins arrondis 
+  background-color: transparent;   /* fond doux
+  text-align: center;          /* texte centré 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ombre légère 
+}*/

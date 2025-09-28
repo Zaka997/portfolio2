@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/projet.css">
+    <link rel="shortcut icon" type="image/png" href="../image/portfolio.png"/>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../image/portfolio.png" width="35", height="35">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Accueil</a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../page/school.html">Parcours scolaire</a>
+
+                    <li class="nav-item">      
+                        <a class="nav-link" href="../page/situation_pro.html">Situation Professionnel</a>
+                       
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- À propos -->
+    <section id="about" class="container-fluid my-0 p-0"> 
+          <div class="col-lg-8 d-flex flex-column justify-content-start align-items-center p-5 text-white" style="height: 100vh;">
+            <div class="bg-dark bg-opacity-50 p-4 rounded shadow-sm">           
+                <h2><strong>Mes situation professionnel</strong></h2>
+                <div class="typewriter-js bg-dark bg-opacity-50 p-2 rounded shadow-sm text-center"></div>
+                <h2><strong id="typewriter-text"><span class="cursor">|
+                  <p>Pendant mon année j'ai eu l'occasion de participé sur des projets les voici : </p></strong></span></h2>
+                </div>
+                  <a href="#explications" class="btn btn-outline-light"><strong>Lire la Suite</strong></a> 
+                  <!--<div class="col-md-2">
+                        <div class="card" style="background-color:rgba(116, 59, 11, 0.3) ;">
+                                
+                   <img src="image/veepe.png" class="card-img-top" alt="Projet 2">
+                        </div>
+                    </div>--> 
+           
+            </div>
+          </div>
+            <div class="col-lg-6">
+                <div style="height: 690px;"></div>
+            </div>
+        
+    </section>
+
+    <!-- cards de mes projets  -->
+
+<section id="explications" class="bg-light py-5" >
+  <div class="container my-4">
+    <div class="row">
+
+      <!-- Premiére card pour GLPI -->
+<div class="col-md-4 mb-4">
+  <div class="card">
+      <h3 class="card-header">GLPI</h3>
+    <img src="../image/glpi.png" class="card-img-top" alt="Projet 1">
+    <div class="card-body">
+      <h5 class="card-text">GLPI simplifie la gestion informatique...</h5>
+      <button class="btn btn-outline-light mt-2" data-bs-toggle="modal" data-bs-target="#modalGLPI">En savoir plus</button>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Deuxiéme card pour Veepee -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+            <h3 class="card-header">Stage Veepee</h3>
+           <img src="../image/veepe.png" class="card-img-top" alt="Projet 2">
+          <div class="card-body">
+            <h5 class="card-text">Vente-Privé (Veepee)</h5>
+            <button class="btn btn-outline-light mt-2" data-bs-toggle="modal" data-bs-target="#modalVeepee">En savoir plus</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Troisième card pour site touristique Maroc -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <header>
+            <h3 class="card-header">Site touristique Maroc</h3>
+          </header>
+            <img src="../image/maroc.jfif" class="card-img-top" alt="Projet 3">
+          <div class="card-body">
+            <h5 class="card-title">Site touristique Maroc</h5>
+            <button class="btn btn-outline-light mt-2" data-bs-toggle="modal" data-bs-target="#modalMaroc">En savoir plus</button>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal GLPI -->
+<div class="modal fade" id="modalGLPI" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="color:rgba(0, 0, 0, 0.3)"><strong>Projet GLPI</strong></h5>
+        <!--Avec Bootstrap tu evite le JS grâce à : "data-bs-dismiss"-->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--CONTEXTE-->
+        <h2 style="color:black"><strong>Contexte :</strong></h2>
+        <p style="color:black">En tant qu'étudiant en première année de BTS SIO, j'ai entrepris l'installation de GLPI sur un système Linux Debian 11. Mon objectif principal était d'acquérir une compréhension approfondie du processus d'installation de ce logiciel de gestion de parc informatique au sein d'un environnement Debian.</p>
+        <!--Environnement-->
+        <h2 style="color:black"><strong>Environnement :</strong></h2> 
+        <p style="color:black">L'ensemble du processus a été réalisé sur un système Linux Debian 11. J'ai utilisé les outils propres à Debian pour la gestion des paquets et des dépendances. Cette démarche m'a permis de développer une compréhension approfondie de l'écosystème Debian, notamment en matière d'installation et de configuration de logiciels.</p>
+        <!--Réalisation-->          
+        <h2 style="color:black"><strong>Realisation :</strong></h2>
+        <p style="color:black">L'installation de GLPI a débuté par la recherche et le téléchargement des paquets nécessaires. J'ai ensuite procédé à l'installation des dépendances, en m'assurant que le système était correctement configuré pour accueillir GLPI. La configuration du serveur web, l'ajustement des paramètres de base de données, et la création des permissions appropriées ont été des étapes cruciales du processus. J'ai veillé à suivre les meilleures pratiques de sécurité pour garantir la stabilité et la fiabilité de l'installation.</p>
+        <!--Bilan-->        
+        <h2 style="color:black"><strong>Bilan :</strong></h2>
+        <p style="color:black">Ce projet individuel a été initié dans le but d'acquérir des compétences pratiques en matière d'installation et de configuration de solutions logicielles sur des systèmes d'exploitation Linux. Le choix de GLPI s'est justifié par son importance dans le domaine de la gestion de parc informatique, offrant une opportunité idéale pour renforcer mes connaissances en administration système.</p>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal Veepee -->
+<div class="modal fade" id="modalVeepee" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="color:rgba(0, 0, 0, 0)"><strong>Projet Veepee</strong></h5>
+        <!--Avec Bootstrap tu evite le JS grâce a : "data-bs-dismiss"-->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--CONTEXTE-->
+        <h2 style="color:black"><strong>Contexte :</strong></h2>
+        <p style="color:black">Pendant mon Stage chez Veepee une entreprise qui est dans le domaine de l'e-commerce ,j'ai réussi a m'integré avec l'équipe de support réseau (Garbis Papazyan, Mehmet Caglar, Jimmy Ferrere, Laurent Garcia). Ma contribution principale a été l'accomplissement de tickets et la gestion de stock.</p>
+        <!--Environnement-->
+        <h2 style="color:black"><strong>Environnement :</strong></h2>
+        <p style="color:black">Ma mission en tant que technicien réseau etait d'assurer le bon fonctionnement du materiel informatique utilisé par la production. Pour assurer ma mission il fallait se déplacer constament dans les 6 entrepôts et dès que nous recevons un ticket via l'application "WeTick" nous devons directement nous en occuper en se déplaçant sur le terrain si nécessaire, cependant il est possible que certain tickets soient réalisable à distance, pour cela on nous a mis a notre disposotion un WMS Tools, un logiciel qui aide les entreprises à gérer et à contrôler les opérations d'entrepôt quotidiennes. <br> Pour la gestion de stock Veepee utilise GLPI </p>
+        <!--Réalisation-->          
+        <h2 style="color:black"><strong>Realisation :</strong></h2>
+        <p style="color:black">TICKETS :<br> MIGRATION :<br>SR(RAC) SALLES SERVERS :<br>DFS :</p>
+        <!--Bilan-->        
+        <h2 style="color:black"><strong>Bilan :</strong></h2>
+        <p style="color:black">Cette expérience chez Veepee a été trés intéressante, celle-ci m'aura permis d'exploiter et a developper mes connaissances en réseau , notre equipe a reussi a atteindre ses objectifs même si il y aura eu des incovenients </p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal Maroc -->
+<div class="modal fade" id="modalMaroc" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="color:rgba(0, 0, 0, 0)"><strong>Site touristique</strong></h5>
+        <!--Avec Bootstrap tu evite le JS grâce a : "data-bs-dismiss"-->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--CONTEXTE-->
+        <h2 style="color:black"><strong>Contexte :</strong></h2>
+        <p style="color:black">En tant qu'étudiant en première année de BTS SIO, j'ai entrepris l'installation de GLPI sur un système Linux Debian 11. Mon objectif principal était d'acquérir une compréhension approfondie du processus d'installation de ce logiciel de gestion de parc informatique au sein d'un environnement Debian.</p>  
+        <!--Environnement-->
+        <h2 style="color:black"><strong>Environnement :</strong></h2> 
+        <p style="color:black">L'ensemble du processus a été réalisé sur un système Linux Debian 11. J'ai utilisé les outils propres à Debian pour la gestion des paquets et des dépendances. Cette démarche m'a permis de développer une compréhension approfondie de l'écosystème Debian, notamment en matière d'installation et de configuration de logiciels.</p>
+        <!--Réalisation-->          
+        <h2 style="color:black"><strong>Realisation :</strong></h2>
+        <p style="color:black">L'installation de GLPI a débuté par la recherche et le téléchargement des paquets nécessaires. J'ai ensuite procédé à l'installation des dépendances, en m'assurant que le système était correctement configuré pour accueillir GLPI. La configuration du serveur web, l'ajustement des paramètres de base de données, et la création des permissions appropriées ont été des étapes cruciales du processus. J'ai veillé à suivre les meilleures pratiques de sécurité pour garantir la stabilité et la fiabilité de l'installation.</p>
+        <!--Bilan-->        
+        <h2 style="color:black"><strong>Bilan :</strong></h2>
+        <p style="color:black">Ce projet individuel a été initié dans le but d'acquérir des compétences pratiques en matière d'installation et de configuration de solutions logicielles sur des systèmes d'exploitation Linux. Le choix de GLPI s'est justifié par son importance dans le domaine de la gestion de parc informatique, offrant une opportunité idéale pour renforcer mes connaissances en administration système.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+    <!-- Contact mettre Linkedin mail
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+           <strong> <h2 style="color: black;" class="text-center">Contactez-moi</h2></strong>
+            <form id="contact-form" action="send-message.php" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Votre email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+                <button type="reset" class="btn btn-primary">Reset</button>
+            </form>
+        </div>
+    </section>-->

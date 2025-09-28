@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Déclaration du jeu de caractères -->
+  <meta charset="UTF-8">
+  <!-- Affichage responsive sur mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titre de l’onglet du navigateur -->
+  <title>Mon Portfolio</title>
+
+  <!-- Lien vers Bootstrap CSS (hébergé en ligne) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Lien vers ta feuille de style CSS personnalisée -->
+  <link rel="stylesheet" href="../css/bts.css">
+
+  <!-- Icône dans l’onglet du navigateur -->
+  <link rel="shortcut icon" type="image/png" href="../image/portfolio.png" />
+</head>
+
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <!-- Logo + texte -->
+      <a class="navbar-brand" href="#">
+        <img src="../image/portfolio.png" width="35" height="35" alt="Logo Portfolio">
+        Mon Portfolio
+      </a>
+
+      <!-- Bouton pour ouvrir/fermer le menu en version mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu de navigation -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Liens de navigation -->
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../page/school.html">Parcours scolaire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../page/situation_pro.html">Mes Projets</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== SECTION À PROPOS / BTS SIO ===== -->
+  <section id="about" class="container my-4 mt-5">
+    <div class="row">
+<div class="col-lg-6 text-center">
+        <h2><strong>Découvrir le BTS SIO</strong></h2>
+        <p><strong>
+            Le BTS Services Informatiques aux Organisations (SIO) est une formation polyvalente qui
+            prépare les étudiants aux métiers de l'informatique en entreprise ou dans des organismes publics.
+            Deux options sont proposées :
+          </strong></p>
+          <a href="school.html" class="btn btn-outline-light" style="background-color: rgba(0,0,0,0.3);">Retour en Arrière</a>
+      </div>
+<!-- ===== CARTE 1 : Option SLAM ===== -->
+<div class ="row g-3">
+    <div class="col-md-6 mb-4">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+
+          <!-- face avant -->
+          <div class="flip-card-front card h-100">
+            <h3 class="card-header text-center">Option SLAM</h3>
+            <div class="row g-0 align-items-center">
+              <div class="col-4 text-center">
+                <img src="../image/sio.png" class="img-fluid rounded-circle my-3" style="max-height:120px;" alt="SLAM">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    Option SLAM (Solutions Logicielles et Applications Métiers)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- face arrière -->
+          <div class="flip-card-back card h-100">
+            <h4 class="mb-2">Développeur d’applications</h4>
+            <p class="px-3">Analyse des besoins, conception, tests et maintenance de solutions logicielles métiers.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-4">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+
+          <!-- face avant -->
+          <div class="flip-card-front card h-100">
+            <h3 class="card-header text-center">Option SISR</h3>
+            <div class="row g-0 align-items-center">
+              <div class="col-4 text-center">
+                <img src="../image/sio.png" class="img-fluid rounded-circle my-3" style="max-height:120px;" alt="SISR">
+              </div>
+              <div class="col-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    L’option SISR (Services Informatiques aux Systèmes et Réseaux)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- face arrière -->
+          <div class="flip-card-back card h-100">
+            <h4 class="mb-2">Administration réseaux & systèmes</h4>
+            <p class="px-3">Installation, sécurisation et maintien en condition opérationnelle des infrastructures.</p>
+            <a href="lien-sisr.html" class="btn btn-light mt-2">Découvrir</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+</div>
+    </div> <!-- Fin de la ligne de cartes -->
+  </section>
+
+  <!-- ===== PIED DE PAGE / FOOTER ===== -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Scripts Bootstrap (JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Ton fichier JS perso (facultatif ici) -->
+  <script src="script.js"></script>
+
+  <!-- ===== SECTION CONTACT (désactivée pour l’instant) ===== -->
+  <!--
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center" style="color: black;"><strong>Contactez-moi</strong></h2>
+      <form id="contact-form" action="send-message.php" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="name" placeholder="Votre nom">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Votre email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+        <button type="reset" class="btn btn-primary">Reset</button>
+      </form>
+    </div>
+  </section>
+  -->
+</body>
+</html>
