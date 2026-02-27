@@ -50,6 +50,34 @@ body {
     text-decoration: underline;
 }
 
+ /* === TYPEWRITER CSS ONLY === */
+        .typewriter-wrapper {
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .typewriter {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #f4f4f9;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #f4f4f9;
+            width: 0;
+            animation: typing 3s steps(30) forwards, blink-caret 0.8s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            0%, 100% { border-color: #f4f4f9; }
+            50% { border-color: transparent; }
+        }
+
 a{
     color: black;
     text-decoration: none;
