@@ -172,22 +172,46 @@
         </div>
 
         <!-- Modal Deuxième stage -->
-        <div class="modal fade" id="modalStage" tabindex="-1" aria-hidden="true">
+         <div class="modal fade" id="modalStage" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" style="color:rgba(0, 0, 0, 0)"><strong>plus tard...</strong></h5>
+                        <h5 class="modal-title" style="color:rgba(0, 0, 0, 0.3)"><strong>Application Mobile MAUI</strong></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <h2 style="color:black"><strong>Contexte :</strong></h2>
-                        <p style="color:black">En tant qu'étudiant en première année de BTS SIO, j'ai entrepris l'installation de GLPI sur un système Linux Debian 11.</p>
+                        <p style="color:black">
+                            Dans le cadre de ma deuxième année de BTS SIO option SLAM, j'ai développé une <strong>application mobile Android</strong> de gestion de parking avec .NET MAUI. 
+                            Ce projet avait pour double objectif : créer une interface mobile permettant de consulter en temps réel les parkings disponibles, les véhicules et leurs statuts, 
+                            en communiquant avec une API REST développée en PHP, et également <strong>servir de support pédagogique</strong> sous forme de TP pour les étudiants de première année.
+                        </p>
                         <h2 style="color:black"><strong>Environnement :</strong></h2>
-                        <p style="color:black">L'ensemble du processus a été réalisé sur un système Linux Debian 11. J'ai utilisé les outils propres à Debian pour la gestion des paquets et des dépendances.</p>
-                        <h2 style="color:black"><strong>Realisation :</strong></h2>
-                        <p style="color:black">L'installation de GLPI a débuté par la recherche et le téléchargement des paquets nécessaires. J'ai ensuite procédé à l'installation des dépendances.</p>
+                        <p style="color:black">
+                            - Framework : <strong>.NET MAUI</strong> (Multi-platform App UI)<br>
+                            - Langage : <strong>C#</strong><br>
+                            - Interface : <strong>XAML</strong><br>
+                            - Communication : <strong>REST API avec HttpClient</strong><br>
+                            - Plateforme cible : <strong>Android</strong><br>
+                            - Outils : Visual Studio 2022, Émulateur Android, Git
+                        </p>
+                        <h2 style="color:black"><strong>Réalisation :</strong></h2>
+                        <p style="color:black">
+                            J'ai conçu une application avec <strong>trois pages principales</strong> : une page d'accueil affichant les statistiques en temps réel, 
+                            une page listant tous les parkings avec leurs disponibilités, et une page présentant les véhicules avec un système de filtres dynamiques (toutes/garées/libres).
+                            <br><br>
+                            L'application utilise des <strong>appels HTTP asynchrones</strong> (async/await) pour communiquer avec l'API, 
+                            désérialise automatiquement les réponses JSON en objets C#, et affiche les données dans des cards modernes avec design Material.
+                            <br><br>
+                            J'ai également géré les problématiques de <strong>compatibilité de types</strong> (conversion string → decimal pour les tarifs), 
+                            configuré les permissions Android pour les appels réseau, et testé l'application sur émulateur et téléphone physique.
+                        </p>
                         <h2 style="color:black"><strong>Bilan :</strong></h2>
-                        <p style="color:black">Ce projet individuel a été initié dans le but d'acquérir des compétences pratiques en matière d'installation et de configuration de solutions logicielles sur des systèmes Linux.</p>
+                        <p style="color:black">
+                            Ce projet m'a permis de maîtriser le développement mobile cross-platform avec <strong>.NET MAUI</strong>, 
+                            la programmation asynchrone en C#, la consommation d'API REST, et la gestion des interfaces utilisateur avec XAML. 
+                            Cette expérience a renforcé mes compétences en architecture logicielle et en communication client-serveur.
+                        </p>
                     </div>
                 </div>
             </div>
