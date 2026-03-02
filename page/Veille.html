@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Veille Technologique - PWA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/projet.css">
     <link rel="shortcut icon" type="image/png" href="../image/portfolio.png"/>
-
 </head>
 
 <body>
-    <!-- Hedear -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="../image/portfolio.png" width="35", height="35">Mon Portfolio</a>
+            <a class="navbar-brand" href="#"><img src="../image/portfolio.png" width="35" height="35">Mon Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,131 +23,320 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="../index.html">Accueil</a>
-
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="school.html">Parcours scolaire</a>
-
+                    </li>
                     <li class="nav-item">      
-                        <a class="nav-link" href="situation_pro.html">Situationtion Professionnel</a>
-
+                        <a class="nav-link" href="situation_pro.html">Situations Professionnelles</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-    <!--À propos-->
+    <!-- Section Introduction avec fond -->
     <section id="about" class="container-fluid m-0 p-0">
-        
-            <div class="col-lg-12 d-flex flex-column justify-content-start align-items-center p-5 text-white" style="height: 70vh;">
-              <div class="bg-dark bg-opacity-50 p-4 rounded shadow-sm">
-                  <h2 class="mb-3"><strong>Question veille technologique:</strong></h2>
-                  <p class="mb-4">Comment l’adoption croissante des outils d’IA de codage (GitHub Copilot, ChatGPT, TabNine…) modifie-t-elle la qualité,<br> la sécurité et la maintenabilité du code dans les projets de développement ?</p>
-                  <a href="#explications" class="btn btn-outline-light">Lire la Suite</a>
-              </div>
-          </div>
-            <div class="col-lg-6" >
-                <!-- Espace vide pour équilibrer la section ou ajouter une image réelle plus tard -->
-                <div style="height: 780px;" ></div>
-            </div>      
-      
-    </section>
-
-
-<section id="explications" class="bg-light py-5" > 
-
-  <!-- Premiér article -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-            <h3 class="card-header">Premier Article</h3>
-           <img src="../image/article_1.png" class="card-img-top" alt="Projet 2">
-          <div class="card-body">
-            <h5 class="card-text">.... </h5>
-            <button class="btn btn-outline-light mt-2" ><a href="https://www.gitclear.com/ai_assistant_code_quality_2025_research">Voir l'article</a></button>
-            <button class="btn btn-outline-light mt-2" data-bs-toggle="modal" data-bs-target="#modalArt1">En savoir plus</button>
-
-          </div>
-        </div>
-      </div>
-
-  <!-- Modal premier article -->
-<div class="modal fade" id="modalArt1" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" style="color:rgba(0, 0, 0, 0)"><strong>Projet Veepee</strong></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!-- PRESENTATION -->
-        <h2 style="color:black"><strong>Présentation :</strong></h2>
-        <p style="color:black">
-        L'article "AI Assistant Code Quality 2025 Research" explore l'impact croissant des outils d'IA de codage tels que GitHub Copilot, ChatGPT et TabNine sur la qualité, la sécurité et la maintenabilité du code dans les projets de développement. L'étude met en lumière les avantages et les défis associés à l'intégration de ces technologies dans le processus de développement logiciel.
-        </p>
-
-        <!-- AUTEUR -->
-        <h2 style="color:black"><strong>Auteur :</strong></h2>
-        <p style="color:black">
-        L'auateur de cet article est Bill Harding , il publie cet article sur gitclear une entreprise spécialisée dans l'analyse de code et l'amélioration de la qualité logicielle.  
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<button class="btn btn-outline-light mt-2" href="">Articles Officiel</button>
-
-
-</section>
-    
-
-     <!-- Exemple de card classique A ENLEVER APRES!!!!!!!
-       <section id="portfolio" class="container my-5">
-        <h2 class="text-center">Mon Parcours Scolaire :</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="../image/glpi.png" class="card-img-top" alt="Projet 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Bac</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">BAC+1</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="contact" class="bg-light py-5">
-        <div class="container">
-           <strong> <h2 style="color: black;" class="text-center">Contactez-moi sur :</h2></strong>
-            <form id="contact-form" action="send-message.php" method="POST">
+        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center p-5 text-white" style="height: 70vh;">
+            <div class="bg-dark bg-opacity-50 p-4 rounded shadow-sm">
+                <h2 class="mb-3"><strong>🔍 Veille Technologique</strong></h2>
+                <p class="mb-4 lead">Les PWA peuvent-elles réellement remplacer les applications mobiles natives ?</p>
                 <div class="mb-3">
-                    <label for="name" class="form-label"><a href="https://www.linkedin.com/in/zakaria-nessar-4a7583329?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BuzFvVlfEQnGtWiV0uic7hA%3D%3D" target="_blank"><img src="../image/linkdin.png" class="card-img-top" alt="Projet 2">Mon Profil Linkdin:</a> </label>
+                    <span class="badge bg-light text-dark me-2">PWA</span>
+                    <span class="badge bg-light text-dark me-2">Mobile Development</span>
+                    <span class="badge bg-light text-dark">2025</span>
                 </div>
-            </form>
+                <a href="#explications" class="btn btn-outline-light">Lire la Suite</a>
+            </div>
         </div>
-    </section>-->
+        <div class="col-lg-6">
+            <div style="height: 100px;"></div>
+        </div>      
+    </section>
+
+    <!-- Section Cards -->
+    <section id="explications" class="bg-light py-5">
+        <div class="container my-4">
+            <div class="row">
+
+                <!-- Card Définition PWA -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <h3 class="card-header">💡 Définition PWA</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Progressive Web App</h5>
+                            <p class="card-text">
+                                Application web utilisant des technologies modernes pour offrir une expérience proche des apps natives.
+                            </p>
+                            <hr style="border-color: rgba(255,255,255,0.3);">
+                            <p class="card-text small">
+                                ✅ Hors ligne<br>
+                                ✅ Installable<br>
+                                ✅ Notifications<br>
+                                ✅ HTTPS sécurisé
+                            </p>
+                            <button class="btn btn-outline-light mt-2" data-bs-toggle="modal" data-bs-target="#modalDefinition">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Article 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <h3 class="card-header">📄 Article 1</h3>
+                        <img src="../image/article_1.png" class="card-img-top" alt="Article 1">
+                        <div class="card-body">
+                            <h5 class="card-title">PWA vs Native Apps</h5>
+                            <p class="card-text">Comparaison performances et fonctionnalités.</p>
+                            <a href="https://web.dev/explore/progressive-web-apps" target="_blank" class="btn btn-outline-light btn-sm">Voir l'article</a>
+                            <button class="btn btn-outline-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalArt1">Résumé</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Article 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <h3 class="card-header">📄 Article 2</h3>
+                        <img src="../image/article_2.png" class="card-img-top" alt="Article 2">
+                        <div class="card-body">
+                            <h5 class="card-title">L'avenir du mobile</h5>
+                            <p class="card-text">Tendances développement mobile 2025-2030.</p>
+                            <a href="https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps" target="_blank" class="btn btn-outline-light btn-sm">Voir l'article</a>
+                            <button class="btn btn-outline-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalArt2">Résumé</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Article 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <h3 class="card-header">📄 Article 3</h3>
+                        <img src="../image/article_3.png" class="card-img-top" alt="Article 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Statistiques PWA 2025</h5>
+                            <p class="card-text">Données chiffrées sur l'adoption des PWA.</p>
+                            <a href="https://www.smashingmagazine.com/category/pwa" target="_blank" class="btn btn-outline-light btn-sm">Voir l'article</a>
+                            <button class="btn btn-outline-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalArt3">Résumé</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Article 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <h3 class="card-header">📄 Article 4</h3>
+                        <img src="../image/article_4.png" class="card-img-top" alt="Article 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Cas d'usage réels</h5>
+                            <p class="card-text">Twitter, Starbucks, Uber : success stories.</p>
+                            <a href="https://pwastats.com" target="_blank" class="btn btn-outline-light btn-sm">Voir l'article</a>
+                            <button class="btn btn-outline-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalArt4">Résumé</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Conclusion -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <h3 class="card-header">🎯 Conclusion</h3>
+                        <div class="card-body">
+                            <h5 class="card-title">Réponse finale</h5>
+                            <p class="card-text">
+                                Les PWA ne remplacent pas totalement les apps natives, mais offrent une alternative viable.
+                            </p>
+                            <hr style="border-color: rgba(255,255,255,0.3);">
+                            <p class="card-text small">
+                                📌 Chaque techno a ses forces<br>
+                                📌 Choix selon besoins<br>
+                                📌 Avenir hybride
+                            </p>
+                            <button class="btn btn-outline-light mt-2" data-bs-toggle="modal" data-bs-target="#modalConclusion">Voir synthèse</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+
+    <!-- Modal Définition -->
+    <div class="modal fade" id="modalDefinition" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color:rgba(0, 0, 0, 0.3)"><strong>💡 Qu'est-ce qu'une PWA ?</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="color:black"><strong>Définition complète :</strong></h2>
+                    <p style="color:black">
+                        Une Progressive Web App (PWA) est une application web qui utilise les dernières technologies 
+                        pour offrir une expérience utilisateur proche d'une application native.
+                    </p>
+                    <h2 style="color:black"><strong>Technologies clés :</strong></h2>
+                    <p style="color:black">
+                        - <strong>Service Workers</strong> : Permet le fonctionnement hors ligne<br>
+                        - <strong>Web App Manifest</strong> : Définit l'apparence de l'app<br>
+                        - <strong>HTTPS</strong> : Obligatoire pour la sécurité<br>
+                        - <strong>APIs modernes</strong> : Notifications, géolocalisation, caméra
+                    </p>
+                    <h2 style="color:black"><strong>Exemples :</strong></h2>
+                    <p style="color:black">
+                        Twitter Lite, Starbucks, Uber, Pinterest, Flipkart, Alibaba
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Article 1 -->
+    <div class="modal fade" id="modalArt1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color:rgba(0, 0, 0, 0.3)"><strong>Article 1 - PWA vs Native</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="color:black"><strong>Présentation :</strong></h2>
+                    <p style="color:black">
+                        Cet article de Google Developers compare en détail les PWA et applications natives. 
+                        Il met en avant les nouveaux accès aux APIs natives qui réduisent l'écart.
+                    </p>
+                    <h2 style="color:black"><strong>Points clés :</strong></h2>
+                    <p style="color:black">
+                        - Les PWA accèdent maintenant à 80% des APIs natives<br>
+                        - Réduction de 70% du temps de chargement grâce aux Service Workers<br>
+                        - Taux de conversion +36% par rapport aux sites web classiques
+                    </p>
+                    <h2 style="color:black"><strong>Source :</strong></h2>
+                    <p style="color:black">Google Developers - web.dev</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Article 2 -->
+    <div class="modal fade" id="modalArt2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color:rgba(0, 0, 0, 0.3)"><strong>Article 2 - L'avenir du mobile</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="color:black"><strong>Présentation :</strong></h2>
+                    <p style="color:black">
+                        Mozilla Developer Network analyse les tendances du développement mobile et 
+                        prédit une convergence progressive entre PWA et native.
+                    </p>
+                    <h2 style="color:black"><strong>Tendances 2025-2030 :</strong></h2>
+                    <p style="color:black">
+                        - Adoption massive des PWA dans l'e-commerce<br>
+                        - Frameworks hybrides en forte croissance (React Native, Flutter)<br>
+                        - Apps natives dominantes pour jeux et apps métier
+                    </p>
+                    <h2 style="color:black"><strong>Source :</strong></h2>
+                    <p style="color:black">Mozilla Developer Network (MDN)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Article 3 -->
+    <div class="modal fade" id="modalArt3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color:rgba(0, 0, 0, 0.3)"><strong>Article 3 - Statistiques</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="color:black"><strong>Présentation :</strong></h2>
+                    <p style="color:black">
+                        Étude complète basée sur 1000+ entreprises ayant adopté les PWA.
+                    </p>
+                    <h2 style="color:black"><strong>Chiffres clés :</strong></h2>
+                    <p style="color:black">
+                        - <strong>Pinterest</strong> : +60% d'engagement utilisateur<br>
+                        - <strong>Starbucks</strong> : Taille réduite de 99.84% (2.3 MB vs 25.6 MB)<br>
+                        - <strong>Uber</strong> : Temps de chargement &lt; 3 secondes sur 2G<br>
+                        - <strong>Forbes</strong> : +100% d'engagement, +43% de sessions
+                    </p>
+                    <h2 style="color:black"><strong>Source :</strong></h2>
+                    <p style="color:black">Smashing Magazine</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Article 4 -->
+    <div class="modal fade" id="modalArt4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color:rgba(0, 0, 0, 0.3)"><strong>Article 4 - Cas d'usage</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="color:black"><strong>Présentation :</strong></h2>
+                    <p style="color:black">
+                        Analyse détaillée de success stories d'entreprises ayant migré vers PWA.
+                    </p>
+                    <h2 style="color:black"><strong>Exemples concrets :</strong></h2>
+                    <p style="color:black">
+                        - <strong>Twitter Lite</strong> : +65% de pages vues, +75% de tweets<br>
+                        - <strong>Alibaba</strong> : +76% de conversions sur navigateur web<br>
+                        - <strong>Flipkart</strong> : Temps passé sur site x3, abandon panier -40%
+                    </p>
+                    <h2 style="color:black"><strong>Source :</strong></h2>
+                    <p style="color:black">PWA Stats - Base de données de cas d'usage</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Conclusion -->
+    <div class="modal fade" id="modalConclusion" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" style="color:rgba(0, 0, 0, 0.3)"><strong>🎯 Conclusion de la veille</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2 style="color:black"><strong>Question :</strong></h2>
+                    <p style="color:black">
+                        Les PWA peuvent-elles réellement remplacer les applications mobiles natives ?
+                    </p>
+                    <h2 style="color:black"><strong>Réponse :</strong></h2>
+                    <p style="color:black">
+                        <strong>Non, pas totalement</strong>, mais elles offrent une alternative viable pour de nombreux cas d'usage.
+                    </p>
+                    <h2 style="color:black"><strong>Synthèse :</strong></h2>
+                    <p style="color:black">
+                        ✅ <strong>PWA adaptées pour :</strong> E-commerce, médias, contenu, sites informatifs<br>
+                        ✅ <strong>Natives adaptées pour :</strong> Jeux, apps bancaires, performances maximales<br>
+                        🔮 <strong>L'avenir :</strong> Coexistence, chaque technologie dans son domaine
+                    </p>
+                    <h2 style="color:black"><strong>Facteurs de choix :</strong></h2>
+                    <p style="color:black">
+                        Le choix dépend du budget, des fonctionnalités requises, de la cible utilisateur et des délais de développement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
     </footer>
 
-   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
-<!-- Pour le titre de la section "À propos de moi" exemplaire:  
-<section id="about" class="position-relative" style="height: 400px;">
-    <div class="position-absolute" style="top: 30px; left: 50px;">
-        <h2><strong>Zakaria Nessar</strong></h2>
-        <p>Bienvenue dans mon parcours scolaire !</p>
-    </div>
-</section> -->
