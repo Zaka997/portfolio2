@@ -8,9 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/projet.css">
     <link rel="shortcut icon" type="image/png" href="../image/portfolio.png"/>
-
 </head>
-
 
 <body>
     <!-- Navbar -->
@@ -30,20 +28,17 @@
                     <li class="nav-item">      
                         <a class="nav-link" href="Veille.html">Veille technologique</a>
                     <li class="nav-item">
-                        <a class="nav-link" href="grille_competences.html">Grille de compétences </a>
-
+                        <a class="nav-link" href="grille_competences.html">Grille de compétences</a>
                 </ul>
             </div>
         </div>
     </nav>
-
 
     <!-- À propos -->
     <section id="about" class="container-fluid my-0 p-0"> 
         <div class="col-lg-8 d-flex flex-column justify-content-start align-items-center p-5 text-white" style="height: 100vh;">
             <div class="bg-dark bg-opacity-50 p-4 rounded shadow-sm">           
                 <h2><strong>Mes situations professionnelles</strong></h2>
-                <!-- TYPEWRITER CSS ONLY -->
                 <div class="typewriter-wrapper my-2">
                     <span class="typewriter">Pendant mon année j'ai eu l'occasion de participé sur des projets les voici :</span>
                 </div>
@@ -55,7 +50,7 @@
         </div>
     </section>
 
-    <!-- cards de mes projets  -->
+    <!-- Cards des projets -->
     <section id="explications" class="bg-light py-5">
         <div class="container my-4">
             <div class="row">
@@ -75,7 +70,7 @@
                 <!-- Card Premier Stage -->
                 <div class="col-md-3 mb-4">
                     <div class="card">
-                        <h3 class="card-header">Stage première année </h3>
+                        <h3 class="card-header">Stage première année</h3>
                         <img src="../image/veepe.png" class="card-img-top" alt="Projet 2">
                         <div class="card-body">
                             <h5 class="card-text">Vente-Privé (Veepee)</h5>
@@ -102,7 +97,7 @@
                         <h3 class="card-header">Projet Scolaire</h3>
                         <img src="../image/sgrc.png" class="card-img-top" alt="Projet Scolaire">
                         <div class="card-body">
-                            <h5 class="card-text">Développement d'une application web</h5>
+                            <h5 class="card-text">Développement d'un logiciel de cuisine</h5>
                             <button class="btn btn-outline-light mt-2" data-bs-toggle="modal" data-bs-target="#modalProjetScolaire">En savoir plus</button>
                         </div>
                     </div>
@@ -111,12 +106,12 @@
             </div>
         </div>
 
-        <!-- Modal GLPI -->
+        <!-- ==================== MODAL GLPI ==================== -->
         <div class="modal fade" id="modalGLPI" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" style="color:rgba(0, 0, 0, 0.3)"><strong>Projet GLPI</strong></h5>
+                        <h5 class="modal-title" style="color:rgba(0,0,0,0.3)"><strong>Projet GLPI</strong></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -128,31 +123,46 @@
                         <p style="color:black">Durant ce projet, j'ai appris à <strong>ajouter et gérer des équipements</strong> comme les ordinateurs, imprimantes et périphériques. J'ai également suivi et traité des <strong>tickets d'incidents</strong>, attribué des matériels aux utilisateurs et mis à jour les historiques des interventions.</p>
                         <h2 style="color:black"><strong>Bilan :</strong></h2>
                         <p style="color:black">Cette expérience m'a permis de mieux comprendre le fonctionnement d'un service informatique et l'importance d'un outil centralisé pour la gestion des équipements et le suivi des incidents. (Concurrents : OCS Inventory, ManageEngine ServiceDesk Plus, Freshservice, Spiceworks, SysAid).</p>
-                        <div class="modal-images">
-                            <h2 style="color:black"><strong>Captures d'écran :</strong></h2>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="../image/GLPI_1.png" alt="GLPI Screenshot 1" class="img-fluid">
+
+                        <!-- Carrousel GLPI -->
+                        <h2 style="color:black"><strong>Captures d'écran :</strong></h2>
+                        <div id="carouselGLPI" class="carousel slide mt-2" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselGLPI" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselGLPI" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselGLPI" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded" style="background:#000;">
+                                <div class="carousel-item active">
+                                    <img src="../image/GLPI_1.png" class="d-block mx-auto" alt="GLPI Screenshot 1" style="max-height:350px; object-fit:contain; width:100%;">
                                 </div>
-                                <div class="col-md-4">
-                                    <img src="../image/GLPI_2.png" alt="GLPI Screenshot 2" class="img-fluid">
+                                <div class="carousel-item">
+                                    <img src="../image/GLPI_2.png" class="d-block mx-auto" alt="GLPI Screenshot 2" style="max-height:350px; object-fit:contain; width:100%;">
                                 </div>
-                                <div class="col-md-4">
-                                    <img src="../image/GLPI_3.png" alt="GLPI Screenshot 3" class="img-fluid">
+                                <div class="carousel-item">
+                                    <img src="../image/GLPI_3.png" class="d-block mx-auto" alt="GLPI Screenshot 3" style="max-height:350px; object-fit:contain; width:100%;">
                                 </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGLPI" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Précédent</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselGLPI" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Suivant</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Modal Premier Stage -->
+        <!-- ==================== MODAL VEEPEE ==================== -->
         <div class="modal fade" id="modalVeepee" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" style="color:rgba(0, 0, 0, 0)"><strong>Projet Veepee</strong></h5>
+                        <h5 class="modal-title" style="color:rgba(0,0,0,0)"><strong>Projet Veepee</strong></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -169,31 +179,46 @@
                         <p style="color:black">- Gestion et résolution de tickets<br>- Migration de systèmes<br>- Gestion et suivi DFS</p>
                         <h2 style="color:black"><strong>Bilan :</strong></h2>
                         <p style="color:black">Cette expérience chez Veepee a été très enrichissante. Elle m'a permis de mettre en pratique et de développer mes compétences en réseau.</p>
-                        <div class="modal-images">
-                            <h2 style="color:black"><strong>Captures d'écran :</strong></h2>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="../image/GLPI_1.png" alt="GLPI Screenshot 1" class="img-fluid">
+
+                        <!-- Carrousel Veepee -->
+                        <h2 style="color:black"><strong>Captures d'écran :</strong></h2>
+                        <div id="carouselVeepee" class="carousel slide mt-2" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselVeepee" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselVeepee" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselVeepee" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded" style="background:#000;">
+                                <div class="carousel-item active">
+                                    <img src="../image/GLPI_1.png" class="d-block mx-auto" alt="Veepee Screenshot 1" style="max-height:350px; object-fit:contain; width:100%;">
                                 </div>
-                                <div class="col-md-4">
-                                    <img src="../image/GLPI_2.png" alt="GLPI Screenshot 2" class="img-fluid">
+                                <div class="carousel-item">
+                                    <img src="../image/GLPI_2.png" class="d-block mx-auto" alt="Veepee Screenshot 2" style="max-height:350px; object-fit:contain; width:100%;">
                                 </div>
-                                <div class="col-md-4">
-                                    <img src="../image/GLPI_3.png" alt="GLPI Screenshot 3" class="img-fluid">
+                                <div class="carousel-item">
+                                    <img src="../image/GLPI_3.png" class="d-block mx-auto" alt="Veepee Screenshot 3" style="max-height:350px; object-fit:contain; width:100%;">
                                 </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVeepee" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Précédent</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselVeepee" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Suivant</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Modal Deuxième stage -->
-         <div class="modal fade" id="modalStage" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+        <!-- ==================== MODAL STAGE 2 (MAUI) ==================== -->
+        <div class="modal fade" id="modalStage" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" style="color:rgba(0, 0, 0, 0.3)"><strong>Application Mobile MAUI</strong></h5>
+                        <h5 class="modal-title" style="color:rgba(0,0,0,0.3)"><strong>Application Mobile MAUI</strong></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -218,7 +243,7 @@
                             une page listant tous les parkings avec leurs disponibilités, et une page présentant les véhicules avec un système de filtres dynamiques (toutes/garées/libres).
                             <br><br>
                             L'application utilise des <strong>appels HTTP asynchrones</strong> (async/await) pour communiquer avec l'API, 
-                            désérialise automatiquement les réponses JSON en objets C#, et affiche les données dans des cards .
+                            désérialise automatiquement les réponses JSON en objets C#, et affiche les données dans des cards.
                             <br><br>
                             J'ai également géré les problématiques de <strong>compatibilité de types</strong> (conversion string → decimal pour les tarifs), 
                             configuré les permissions Android pour les appels réseau, et testé l'application sur émulateur et téléphone physique.
@@ -229,28 +254,43 @@
                             la programmation asynchrone en C#, la consommation d'API REST, et la gestion des interfaces utilisateur avec XAML. 
                             Cette expérience a renforcé mes compétences en architecture logicielle et en communication client-serveur.
                         </p>
-                        <div class="modal-images">
-                            <h2 style="color:black"><strong>Captures d'écran :</strong></h2>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <img src="../image/GLPI_1.png" alt="GLPI Screenshot 1" class="img-fluid">
+
+                        <!-- Carrousel Stage MAUI -->
+                        <h2 style="color:black"><strong>Captures d'écran :</strong></h2>
+                        <div id="carouselStage" class="carousel slide mt-2" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselStage" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselStage" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselStage" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded" style="background:#000;">
+                                <div class="carousel-item active">
+                                    <img src="../image/GLPI_1.png" class="d-block mx-auto" alt="Stage Screenshot 1" style="max-height:350px; object-fit:contain; width:100%;">
                                 </div>
-                                <div class="col-md-4">
-                                    <img src="../image/GLPI_2.png" alt="GLPI Screenshot 2" class="img-fluid">
+                                <div class="carousel-item">
+                                    <img src="../image/GLPI_2.png" class="d-block mx-auto" alt="Stage Screenshot 2" style="max-height:350px; object-fit:contain; width:100%;">
                                 </div>
-                                <div class="col-md-4">
-                                    <img src="../image/GLPI_3.png" alt="GLPI Screenshot 3" class="img-fluid">
+                                <div class="carousel-item">
+                                    <img src="../image/GLPI_3.png" class="d-block mx-auto" alt="Stage Screenshot 3" style="max-height:350px; object-fit:contain; width:100%;">
                                 </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselStage" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Précédent</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselStage" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Suivant</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ✅ NOUVEAU MODAL - Projet Scolaire -->
+        <!-- ==================== MODAL PROJET SCOLAIRE (SGRC) ==================== -->
         <div class="modal fade" id="modalProjetScolaire" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" style="color:rgba(0,0,0,0.3)"><strong>Projet Scolaire</strong></h5>
@@ -263,22 +303,51 @@
                         </p>
                         <h2 style="color:black"><strong>Environnement :</strong></h2>
                         <p style="color:black">
-                            Le projet a été développé avec les technologies suivantes :
+                            Le projet a été développé avec les technologies suivantes :<br>
                             - Langage : <strong>PHP, HTML, CSS</strong><br>
                             - Base de données : <strong>MySQL</strong><br>
-                            - Outils : Visual Studio Code
-                            - Serveur distant : FileZilla pour le déploiement et la gestion des fichiers  
+                            - Outils : <strong>Visual Studio Code</strong><br>
+                            - Serveur distant : <strong>FileZilla pour le déploiement et la gestion des fichiers</strong>
                         </p>
                         <h2 style="color:black"><strong>Réalisation :</strong></h2>
                         <p style="color:black">
-                            Première étape de réalisation : Savoir ce que fait chacun en début de semaine et se fixer les objectifs à atteindre en chaque fin de semaine.
-                            Deuxième étape de réalisation : Coder les fonctions pour l'API et concevoir les pages pour créer les différentes interfaces du logiciel. Utilisation de FileZilla pour déployer le code sur le serveur distant.
-                            Troisième étape de réalisation : Interconnecter chaque page avec l'API et la base de données distante pour que le logiciel fonctionne correctement entre chaque interface.
+                            Première étape : Savoir ce que fait chacun en début de semaine et se fixer les objectifs à atteindre en fin de semaine.
+                            Deuxième étape : Coder les fonctions pour l'API et concevoir les pages pour créer les différentes interfaces du logiciel. Utilisation de FileZilla pour déployer le code sur le serveur distant.
+                            Troisième étape : Interconnecter chaque page avec l'API et la base de données distante pour que le logiciel fonctionne correctement entre chaque interface.
                         </p>
                         <h2 style="color:black"><strong>Bilan :</strong></h2>
                         <p style="color:black">
                             Ce logiciel m'a permis de comprendre comment, dans une grosse équipe, nous pouvions travailler ensemble et cela m'a permis de comprendre que la communication entre développeurs est essentielle à la réussite d'un projet comme celui-là en groupe.
                         </p>
+
+                        <!-- Carrousel Projet Scolaire -->
+                        <h2 style="color:black"><strong>Captures d'écran :</strong></h2>
+                        <div id="carouselScolaire" class="carousel slide mt-2" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselScolaire" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselScolaire" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselScolaire" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded" style="background:#000;">
+                                <div class="carousel-item active">
+                                    <img src="../image/sgrc_1.png" class="d-block mx-auto" alt="SGRC Screenshot 1" style="max-height:350px; object-fit:contain; width:100%;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../image/sgrc_2.png" class="d-block mx-auto" alt="SGRC Screenshot 2" style="max-height:350px; object-fit:contain; width:100%;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../image/sgrc_3.png" class="d-block mx-auto" alt="SGRC Screenshot 3" style="max-height:350px; object-fit:contain; width:100%;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselScolaire" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Précédent</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselScolaire" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Suivant</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -290,7 +359,8 @@
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
